@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Soltuon](https://your-solution-url.com)
+- Solution URL: [Soltuon](https://www.frontendmentor.io/solutions/interactive-rating-component-vanilla-js-zLEh73o9rp)
 - Live Site URL: [Live Site](https://zwiro.github.io/interactive-rating-component-challenge/)
 
 ## My process
