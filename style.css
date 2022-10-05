@@ -1,0 +1,209 @@
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(24, 27, 31, 1);
+    background-image: linear-gradient(0deg, rgb(24, 27, 31) 0%, rgba(34, 43, 52, 1) 100%);
+    margin-inline: 1.6rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 1rem;
+}
+
+.rating-card img {
+    margin-right: auto;
+    background-color: hsl(215, 20%, 20%);
+    padding: 0.75rem;
+    border-radius: 50%;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.rating-card>p {
+    color: hsl(216, 12%, 54%);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.rating p {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.75rem;
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out, transform 200ms ease-in-out;
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.thank-you-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(24, 27, 31, 1);
+    background-image: linear-gradient(0deg, rgb(24, 27, 31) 0%, rgba(34, 43, 52, 1) 100%);
+    margin-inline: 1.6rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 1rem;
+}
+
+.thank-you-card img {
+    height: 6rem;
+}
+
+h2 {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(215, 20%, 17%);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.thank-you-card p:first-of-type {
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.thank-you-card p:last-of-type {
+    color: hsl(215, 20%, 80%);
+    margin-left: auto;
+    padding-bottom: 1rem;
+}
+
+.rating-card,
+.thank-you-card {
+    height: 24rem;
+    min-width: 16rem;
+    max-width: 26rem;
+}
+
+@media (min-width:1200px) {
+    .rating-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .rating-card img {
+        margin-bottom: 1.4rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .rating-card>p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .rating p {
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: 1.2rem;
+    }
+
+    button {
+        padding-block: 0.85rem;
+    }
+
+    .rating-card,
+    .thank-you-card {
+        height: 27.5rem;
+        min-width: 16rem;
+        max-width: 27rem;
+    }
+
+    .thank-you-card img {
+        height: 7rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .thank-you-card p:first-of-type {
+        font-size: 1rem;
+        padding-inline: 0.75rem;
+    }
+}
+
+@media (hover: hover) {
+    button:hover:enabled {
+        cursor: pointer;
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .rating p:hover {
+        cursor: pointer;
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .thank-you-card p:last-of-type:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: hsl(25, 97%, 53%);
+    }
+}
+
+.not-selected {
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(215, 20%, 17%);
+}
+
+.selected {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.rating-animation {
+    transform: scale(1.1);
+}
