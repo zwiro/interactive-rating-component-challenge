@@ -15,12 +15,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screenshot1.png)
+![](images/screenshot2.png)
 
 ### Links
 
 - Solution URL: [Soltuon](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://zwiro.github.io/interactive-rating-component-challenge/)
 
 ## My process
 
